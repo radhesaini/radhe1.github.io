@@ -1,0 +1,35 @@
+.home-main{
+    background-image: url('../image/cup-1834296_960_720.jpg');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+
+.mypic{
+    width: 200%;
+    /* height: 200%; */
+}
+
+
+.about>p{
+    text-align: left;
+}
+
+
+.pic-my{
+    width: 80%;
+    height: 190%;
+}
+
+.my-info-container{
+    display: flex;
+    padding: 6rem;
+    /* align-items: center; */
+}

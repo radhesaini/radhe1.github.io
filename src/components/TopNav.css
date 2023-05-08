@@ -1,0 +1,21 @@
+.topnav-main{
+    display: flex;
+    background: green;
+    padding: 0.6rem;
+}
+
+.left{
+    color: aquamarine;
+    font-weight: 900;
+}
+
+.right{
+    display: flex;
+    margin-left: auto;
+    order: 2;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
