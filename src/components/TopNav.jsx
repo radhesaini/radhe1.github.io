@@ -1,5 +1,6 @@
 import React from 'react'
 import './TopNav.css'
+import { BrowserRouter, Route, Routes, Link, NavLink} from 'react-router-dom'
 
 export const TopNav = () => {
   return (
@@ -7,13 +8,13 @@ export const TopNav = () => {
         <div className="left">
             Radhe
         </div>
-        <div className="right">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Projects</a>
-            <a href="">Experience</a>
-            <a href="">Contact</a>
-        </div>
+          <div className="right">
+             <Link to="/home">Home</Link>
+             <Link to="/about">About</Link>
+             <Link to="/projects">Projects</Link>
+             <Link to="/experiences">Experiences</Link>
+          <Link to="/contacts">Contact</Link>
+          </div>
     </div>
   )
 }

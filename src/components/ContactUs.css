@@ -1,0 +1,43 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 0.2rem;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: skyblue;
+    margin: 2rem;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.contact-form>input{
+    height: 1.2rem;
+    width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.contact-form>textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.contact-form>button{
+    background: blue;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.contact-main-container{
+    display: flex;
+    justify-content: center;
+}
+

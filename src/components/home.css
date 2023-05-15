@@ -11,9 +11,14 @@
     align-items: self-start;
 }
 
+.about>p{
+    color: #fff
+}
+
 
 .mypic{
     width: 200%;
+    /* margin-top: -10rem; */
     /* height: 200%; */
 }
 
@@ -25,11 +30,10 @@
 
 .pic-my{
     width: 80%;
-    height: 190%;
 }
 
 .my-info-container{
     display: flex;
-    padding: 6rem;
-    /* align-items: center; */
+    align-items: center;
+    padding-left: 8rem
 }

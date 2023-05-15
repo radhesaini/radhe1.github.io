@@ -1,0 +1,64 @@
+.details-row{
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.my-info-container2{
+   padding: 2rem;
+}
+
+.first-left-div{
+    width: 50%;
+    background: green;
+    padding: 2rem;
+    border-radius: 1rem;
+    height: fit-content;
+}
+
+.second-right-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 1rem;
+}
+
+.resume-view-btn{
+    width: 30%;
+    background: pink;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    height: 2rem;
+}
+.resume-download-btn{
+    width: 35%;
+    background: red;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    height: 2rem;
+}
+
+.pic-my1{
+    width: 100%;
+    height: 66%;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.action-btn{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 60%;
+}
+
+
+
+
+.about1{
+    display: flex;
+    gap: 2rem;
+}
