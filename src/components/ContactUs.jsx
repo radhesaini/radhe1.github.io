@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './ContactUs.css'
 
 
 export const ContactUs = () => {
   const [name, setName] = useState('radhe');
   const [nameError, setNameError] = useState('');
+  const [orgNameError, setOrgNameError] = useState('');
   const [ocupType, setOcupType] = useState('');
   const [orgName, setOrgName] = useState('');
   const [email, setEmail] = useState('');
@@ -17,19 +18,30 @@ export const ContactUs = () => {
     if(itemName === 'name'){
       regex = /[A-Za-z]{5,10}$/;
     }
+    else if(itemName === 'orgName'){
+      regex = /[A-Za-z]+$/;
+    }
     return regex.test(value);
   }
 
   const onContact = () => {
-    if(isValid('name', name)){
-      setNameError('');
+    if(!isValid('name', name)){
+      setNameError('Enter a valid Name');
     }
     else{
-      setNameError('Enter a valid Name');
+      setNameError('')
+    }
+    if(!isValid('orgName', orgName)){
+      setOrgNameError("Enter a valid Organization Name")
+    }
+    else{
+      setOrgNameError('')
     }
     console.log
     console.log(name, ocupType, orgName, email, msg, nameError);
   }
+  
+
   return (
     <div className='contact-main-container'>
     <div className='contact-container'>
@@ -41,7 +53,7 @@ export const ContactUs = () => {
         
         <label htmlFor="">Name</label>
         <input id='name' name='name' type="text" value={name} onChange={(e)=>setName(e.target.value)} required/>
-        <p style={{color: 'red'}}>{nameError}</p>
+        {nameError ? <p style={{color: 'red'}}>{nameError}</p>: null}
 
 
         <label htmlFor="">Ocuupation Type</label>
@@ -49,7 +61,7 @@ export const ContactUs = () => {
 
         <label htmlFor="">Organization / Instiute Name</label>
         <input id='org_name' name='org_name' type="text" value={orgName} onChange={(e)=>setOrgName(e.target.value)}/>
-
+        {orgNameError && <p style={{color: 'red'}}>{orgNameError}</p>}
         <label htmlFor="">Email</label>
         <input id='email' name='email' type="text" value={email} onChange={(e)=>setEmail(e.target.value)} />
 
@@ -58,7 +70,7 @@ export const ContactUs = () => {
 
         </textarea>
       <div className="savebtn">
-        <button type='submit' onClick={onContact}>
+        <button type='submit' onClick={()=>onContact()}>
           Send
         </button>
       </div>

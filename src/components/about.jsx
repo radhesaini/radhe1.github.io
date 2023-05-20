@@ -2,6 +2,7 @@ import React from 'react'
 import './About.css';
 import MainBackImg from '../image/mynewpic-removebg-preview.png'
 import {Link} from 'react-router-dom'
+import {Home} from './home'
 export const About = () => {
   return (
     <div>
@@ -36,6 +37,7 @@ export const About = () => {
 
       </div>
     </div>
+    <Home name="radhe" />
     </div >
   )
 }

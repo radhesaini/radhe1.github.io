@@ -4,7 +4,7 @@ import './home.css'
 import MainBackImg from '../image/mynewpic-removebg-preview.png'
 
 
-export const Home = () => {
+export const Home = (props) => {
     return (
 
         <div className='home-main'>
@@ -21,6 +21,7 @@ export const Home = () => {
                         I built the project with two other engineers over the period of three months on a React/Redux and Golang stack.
 
                         I'm interested in the Front End Engineer role at Company XYZ because I like working in this ridesharing space and creating products to improve the lives of users.
+                   {props.name}
                     </p>
                 </div>
                 <div className="mypic">

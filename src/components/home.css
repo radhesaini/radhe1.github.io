@@ -37,3 +37,28 @@
     align-items: center;
     padding-left: 8rem
 }
+
+
+@media screen and (max-width: 320px) and ( max-height: 480px) {
+    .my-info-container {
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        font-size: .5rem;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .about{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .mypic{
+        width: 100%;
+    }
+    .pic-my{
+        width: 100%;
+    }
+}
