@@ -1,45 +1,82 @@
-.home-main{
+.home-main {
     background-image: url('../image/cup-1834296_960_720.jpg');
     background-repeat: no-repeat, repeat;
     background-size: cover;
-    height: 100vh;
 }
 
-.about{
+.about {
     display: flex;
     flex-direction: column;
     align-items: self-start;
 }
 
-.about>p{
+.about>p {
     color: #fff
 }
 
 
-.mypic{
+.mypic {
     width: 200%;
-    /* margin-top: -10rem; */
-    /* height: 200%; */
 }
 
 
-.about>p{
+.about>p {
     text-align: left;
 }
 
 
-.pic-my{
+.pic-my {
     width: 80%;
 }
 
-.my-info-container{
+.my-info-container {
     display: flex;
     align-items: center;
     padding-left: 8rem
 }
 
+@media screen and (max-width: 650px) {
+    .home-main {
+        box-sizing: border-box;
+    }
 
-@media screen and (max-width: 320px) and ( max-height: 480px) {
+    .about {
+        display: flex;
+        overflow: auto;
+        font-size: 0.7rem;
+        flex-direction: row;
+        gap: 0.4rem;
+        width: 90%;
+    }
+
+    .my-info-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-left: 0;
+    }
+
+    .about>h1 {
+        writing-mode: vertical-lr;
+        font-weight: 900;
+        border-right: solid blue;
+        border-left: solid beige;
+        margin: auto 0;
+    }
+
+    .mypic {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .mypic>img {
+        width: 60%;
+        padding-inline: 3rem;
+    }
+}
+
+@media screen and (650px >= max-width <= 720px) and (max-height: 480px) {
+    
     .my-info-container {
         padding: 0;
         box-sizing: border-box;
@@ -49,16 +86,17 @@
         width: 100%;
         margin: 0;
     }
-    
-    .about{
+
+    .about {
         padding: 1rem;
         width: 100%;
     }
 
-    .mypic{
+    .mypic {
         width: 100%;
     }
-    .pic-my{
+
+    .pic-my {
         width: 100%;
     }
 }

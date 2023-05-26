@@ -42,7 +42,9 @@ a{
 }
 }
 
-
+.right-btn{
+    display: none;
+}
 
 @media screen and (max-width: 320px) and ( max-height: 480px) {
     .topnav-main{
@@ -58,10 +60,84 @@ a{
     
     .right{
         display: flex;
-    font-size: .6rem;
-    gap: 1rem;
+}
+}
+
+/* 
+*{
     box-sizing: border-box;
-    margin-left: auto;
-    order: 2;
 }
+
+.topnav-main{
+    display: flex;
+    background: green;
+    padding: 1rem;
+    overflow: hidden;
 }
+
+.left{
+    color: aquamarine;
+    font-weight: 900;
+    font-size: 1rem;
+    padding-right: 2rem;
+}
+
+.right{
+  margin-left: auto;
+}
+
+*/
+
+.right1{
+    display: none;
+}
+
+.right > a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.right-btn{
+    display: none;
+}
+
+.right-hide{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+     .right{
+        display: none;
+     }
+     .right-btn{
+        display: flex;
+        margin-left: auto;
+      }
+     .right1{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width:10rem;
+        position: absolute;
+        top: 2.5rem;
+        right: 0;
+     }
+     .right1 > a {
+        position: relative;
+        border: 1px solid white;
+        padding: 0.2rem;
+        text-decoration: none;
+        color: #fff;
+        width: 100%;
+        background: green;
+     }
+     .right1>a:hover{
+        background: black;
+     }
+}
+
+
+
+
